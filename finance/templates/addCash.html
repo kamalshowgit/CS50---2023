@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Deposit cash
+{% endblock %}
+
+{% block main %}
+    <h1> Deposit Cash </h1>
+    <form action="/addCash" method="post">
+        <div>
+            <input class="form-control mx-auto w-auto" id="added_cash" name="added_cash" placeholder="Type amount" type="number">
+        </div>
+        <br>
+        <button class="btn btn-primary" type="submit">Add cash</button>
+    </form>
+{% endblock %}

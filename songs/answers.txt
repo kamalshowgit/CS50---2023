@@ -1,0 +1,11 @@
+Characterizing Audio Aura:
+If the "songs.db" contains the top 100 songs of one listener from 2018, the audio aura could be characterized based on the average energy, valence, and danceability of those songs. For example, if the average energy and danceability are high, and the valence is positive, it might indicate an energetic and upbeat audio aura, suggesting that the listener's top songs were lively and uplifting.
+
+Limitations and Better Ways to Calculate Aura:
+Calculating an audio aura based solely on the average energy, valence, and danceability of the top 100 songs may have some limitations. Here are a few considerations:
+
+Limited Representation: The audio aura is derived from the listener's top 100 songs, which might not accurately reflect their full range of emotions or musical preferences. Some songs might have a more profound impact on the listener's mood than others, and those might not be adequately represented in the average calculation.
+
+Time Sensitivity: Spotify Wrapped considers the listener's top songs from the past year. However, people's emotions and musical preferences can change rapidly over time, and the audio aura might not fully capture the current mood.
+
+Subjectivity: The notion of an audio aura is subjective, and different individuals might interpret the same set of songs differently. Some listeners might feel that certain songs evoke certain emotions, while others might perceive them differently.

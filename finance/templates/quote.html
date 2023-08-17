@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <h1> Quote </h1>
+    <form action="/quote" method="post">
+        <div>
+            <input class="form-control mx-auto w-auto" id="symbol" name="symbol" placeholder="Symbol" type="text">
+        </div>
+        <br>
+        <button class="btn btn-primary" type="submit">Quote</button>
+    </form>
+{% endblock %}

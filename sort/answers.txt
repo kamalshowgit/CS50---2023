@@ -1,0 +1,18 @@
+sort1 uses: Bubble sort
+
+How do you know?:
+real time for 50,000 words to sort
+random: 9.451s
+shorted: 4.478s
+
+sort2 uses: Merge sort
+
+How do you know?:
+random: 3.208s
+
+
+sort3 uses: Selection sort
+
+How do you know?:
+random: 6.041
+sorted: 6.005

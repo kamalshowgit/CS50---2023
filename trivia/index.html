@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                    <form id= "quizForm">
+                        <h3>Question: What is the capital of France?</h3>
+                            <label>
+                                <input type="radio" name="answer" value="a"> a) London
+                            </label><br>
+                            <label>
+                            <input type="radio" name="answer" value="b"> b) Paris
+                        </label><br>
+                        <label>
+                            <input type="radio" name="answer" value="c"> c) Berlin
+                        </label><br>
+                        <label>
+                            <input type="radio" name="answer" value="d"> d) Rome
+                        </label><br>
+                        <br>
+                        <input type="submit" value="Submit">
+                    </form>
+                    <div id="result"></div>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <form id="quizFormFR">
+                    <p>Question 1: What is the capital of Japan?</p>
+                    <input type="text" name="freeResponse1" placeholder="Enter your answer here..." required><br>
+
+                    <p>Question 2: Who wrote the play "Romeo and Juliet"?</p>
+                    <input type="text" name="freeResponse2" placeholder="Enter your answer here..." required><br>
+
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+
+                <div id="result"></div>
+                <!-- TODO: Add free response question here -->
+            </div>
+        </div>
+    </body>
+    <script>
+        document.getElementById("quizForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const selectedAnswer = document.querySelector('input[name="answer"]:checked');
+
+            if (selectedAnswer) {
+                const answerValue = selectedAnswer.value;
+                const resultDiv = document.getElementById("result");
+
+                if (answerValue === "b") {
+                    resultDiv.innerHTML = "<p style='color: green;'>Correct! You selected Paris.</p>";
+                }
+
+                else {
+                    resultDiv.innerHTML = "<p style='color: red;'>Incorrect! The correct answer is Paris.</p>";
+                }
+            }
+        })
+
+        document.getElementById("quizFormFR").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            // Free-response question handling
+            const answer1 = document.querySelector('input[name="freeResponse1"]').value.trim().toLowerCase();
+            const answer2 = document.querySelector('input[name="freeResponse2"]').value.trim().toLowerCase();
+            let score = 0;
+
+            // Checking the answers
+            if (answer1 === "tokyo") {
+                score++;
+            }
+
+            if (answer2 === "william shakespeare") {
+                score++;
+            }
+
+            // Display the result
+            const resultDiv = document.getElementById("result");
+            resultDiv.innerHTML = "<p>You scored " + score + " out of 2 questions correctly.</p>";
+        });
+    </script>
+</html>

@@ -1,0 +1,33 @@
+{% block body %}
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="/static/styles.css" rel="stylesheet">
+        <title>Birthdays</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Edit Birthday</h1>
+        </div>
+        <div class="container">
+            <div class="section">
+
+                <h2>Edit a Birthday</h2>
+                {% for birthday in birthdays %}
+                <!-- a form for users to submit a name, a month, and a day -->
+                <!-- technically this approach surfaces the id and makes it open to attack -->
+                    <form action="/" method="post">
+                        <input autocomplete="off" autofocus hidden name="id" placeholder="ID" readonly type="text" value="{{ birthday.id }}">
+                        <input autocomplete="off" autofocus name="name" placeholder="Name" readonly type="text" value="{{ birthday.name }}">
+                        <input autocomplete="off" autofocus name="month" placeholder="Month" type="text" value="{{ birthday.month }}">
+                        <input autocomplete="off" autofocus name="day" placeholder="Day" type="text" value="{{ birthday.day }}">
+                        <input type="submit" value="Update Birthday">
+                    </form>
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+</html>
+{% endblock %}
