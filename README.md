@@ -1,2 +1,2 @@
 # CS50 - 2023
- CS 50 Course work and projects
+ CS50 "Introduction to computer science" 3-month certificate Coursework on computer science, tutorials, quiz and projects
