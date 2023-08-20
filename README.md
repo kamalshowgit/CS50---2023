@@ -34,6 +34,11 @@ If you're new to CS50 or computer science in general, don't worry! Getting start
 
 A special thanks to Professor David J. Malan and the entire CS50 team for creating and maintaining this incredible course, and to the dedicated students whose passion for learning has enriched the CS50 community.
 
+<a href="https://www.linkedin.com/in/kamalsonikgp/">
+<img src="CS50x.png" alt="Description of the image">
+</a>
+<br>
+
 ## Get in Touch
 
 If you have questions, suggestions, or just want to connect with fellow CS50 enthusiasts, feel free to reach out via email or social media (links provided in my GitHub profile).
@@ -44,9 +49,4 @@ Start your journey into the world of computer science with CS50! Happy coding!
 
 **Disclaimer:** This repository is intended to be a supplementary resource and does not replace the official CS50 course. Make sure to enroll in the official course to fully benefit from the immersive learning experience.
 
-
-<a href="https://www.linkedin.com/in/kamalsonikgp/">
-<img src="CS50x.png" alt="Description of the image">
-</a>
-<br>
 
